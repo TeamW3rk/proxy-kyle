@@ -1,1 +1,0 @@
-{"options":{},"indexes":[{"v":2,"key":{"_id":1},"name":"_id_","ns":"restaurants.bookings"},{"v":2,"unique":true,"key":{"id":1},"name":"id_1","ns":"restaurants.bookings","background":true}],"uuid":"4dc80914d0b84f17a9fbb500b05754c1"}
