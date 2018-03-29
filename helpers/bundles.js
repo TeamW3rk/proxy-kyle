@@ -15,10 +15,6 @@ module.exports =
   }
 ];
 
-// id: 'restaurantId',
-// data: 'restaurant',
-
-
 
 
 
