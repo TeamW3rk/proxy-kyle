@@ -1,3 +1,4 @@
+const nr = require('newrelic');
 const express = require('express')
 const morgan = require('morgan');
 const path = require('path');
@@ -17,7 +18,7 @@ let components;
 app.get('/r/:id', (req, res) => {
   renderComponents(req.params.id, components)
     .then((renderedComponents) => {
-      console.log('++++ rendered components FROM -- server.js ++++', renderedComponents);
+      // console.log('++++ rendered components FROM -- server.js ++++', renderedComponents);
       res.send(mainHTML(renderedComponents));
     })
     .catch(error => {
@@ -31,6 +32,8 @@ downloadBundles().then(() => {
     console.log(`server running at: http://localhost:${port}`)
   });
 }) 
+
+
 .catch(function (error) {
   console.log('ERROR IN SERVER.JS FILE --->', error);
   if (error.response) {
